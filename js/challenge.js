@@ -1,3 +1,6 @@
-document.addEvent
+document.addEventListener('DOMContentLoaded', app(event));
 
-const counter = document.getElementById('counter');
+app(event){
+  const counter = document.getElementById('counter');
+counter.innerText('3');
+}
