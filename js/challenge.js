@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', app(event));
-let counter = document.getElementById('counter');
 
-function countUp(){
+function countUp(counter){
   counter.innerText = `${parseInt(counter.innerText) + 1}`;
 }
 
 function app(event){
-  setTimeout(countUp(), 1000);
+  let counter = document.getElementById('counter');
+  setTimeout(countUp(counter), 1000);
 }
