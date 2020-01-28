@@ -6,7 +6,7 @@ function countUp(counter){
 
 function app(event){
   let counter = document.getElementById('counter');
-  while(true){
+  whhile(true){
     setTimeout(counter.innerText = countUp(counter), 1000);
 }
 }
